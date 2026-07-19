@@ -1,0 +1,64 @@
+ @charset "utf-8";
+.page_div{margin: 0.9rem 0 0;color: #666666;text-align: center;display: flex;font-size: 0.18rem;font-family: "微软雅黑";align-items: center;justify-content: center;}
+.page_div button{display:inline-block;width: 0.48rem;height: 0.48rem;cursor:pointer;color:#666;font-size: 0.18rem;line-height: 0.46rem;border: 0px solid #dce0e0;text-align:center;margin: 0 0.04rem;-webkit-appearance: none;-moz-appearance: none;appearance: none;/* font-weight: bold; */border-radius: 0.04rem;font-family: "微软雅黑";background: none;}
+#nextPage,#prePage{/* width: 0.9rem; *//* color: #c90011; *//* font-size: 0.3rem; *//* font-family: fangsong; *//* font-weight: bold; */}
+#nextPage,#prePage{width: 0.8rem;}
+.page_div .current{background-color: var(--mainColor);border-color: var(--mainColor);color:#FFF;font-weight: bold;}
+.totalPages{margin:0 10px}
+.totalPages span,.totalSize span{color:#465ea5;margin:0 5px}
+.page_div button:disabled{/* opacity:.5; */cursor:no-drop;color: #666;}
+.totalNum,.totalList,#firstPage,#lastPage{display: none;}
+ .page_div button{border: 1px solid #707070;}
+#page{margin-top: 0.6rem;margin-bottom:0.75rem;}
+.page_div .white {
+    margin: 0 0.14rem;
+    width: 0.46rem;
+    line-height: 0.46rem;
+    display: inline-block;
+    border-radius: 0.04rem;
+    border: 1px solid #707070;
+    text-align: center;
+    background: #fff;
+    font-size: 0.185rem;
+    color: #666;
+}
+
+#prePage {
+    margin-left: 0.3rem;
+}
+
+button#jump {
+    width: 0.8rem;
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+    color: #FFF;
+    margin-left: 0.06rem;
+}
+.col_news_list div#wp_paging_w6 {
+    display: none;
+}
+.swiper-button-lock{display:flex;}
+
+@media screen and (max-width: 999px) {
+ .page_div span,.page_div input,button#jump{
+    display: none ! important;
+}
+ .page_div{
+    margin-bottom: 30px;
+}
+    #firstPage, #lastPage, #nextPage, #prePage{
+    /* width: 0.9rem; */
+    /* height: 0.7rem; */
+    /* line-height: 0.7rem; */
+}
+.page_div button{line-height: 0.7rem;height: 0.7rem;width: 0.7rem;margin: 0 2px;}
+}
+@media screen and (max-width: 479px) {
+ #nextPage, #prePage{
+    width: 34px;
+    /* padding: 0 5px; */
+    /* line-height: 27px; */
+    /* height: 27px; */
+}
+.page_div button{border: 1px solid #b5b5b5;height: 27px;line-height: 27px;width: 26px;flex: none;}
+}

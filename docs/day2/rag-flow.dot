@@ -1,0 +1,32 @@
+digraph RAG {
+  graph [rankdir=TB, bgcolor="#F6F3EC", pad=0.35, nodesep=0.38, ranksep=0.55, fontname="Microsoft YaHei", label="校园问答助手 - RAG 问答流程", labelloc=t, fontsize=22, fontcolor="#12394D"];
+  node [shape=box, style="rounded,filled", fontname="Microsoft YaHei", fontsize=11, color="#9BB5C3", fillcolor="#FFFFFF", fontcolor="#173645", margin="0.16,0.10"];
+  edge [fontname="Microsoft YaHei", fontsize=9, color="#5D8498", fontcolor="#456A7D", arrowsize=0.75];
+
+  q [label="1. 用户提问", fillcolor="#DCECF2"];
+  valid [shape=diamond, label="问题有效?", fillcolor="#FFF4D6"];
+  embed [label="2. 查询向量化\nDashScope Embedding"];
+  search [label="3. TopK 向量检索\nFAISS"];
+  found [shape=diamond, label="检索到\n相关片段?", fillcolor="#FFF4D6"];
+  context [label="4. 构建上下文\n片段 + 标题 + 来源"];
+  prompt [label="5. 拼接 Prompt\n系统指令 + 上下文 + 问题"];
+  llm [label="6. LLM 生成回答\n通义千问"];
+  stream [label="SSE 流式返回\n答案 + 引用来源", fillcolor="#E7F2EC"];
+  save [label="保存会话与消息"];
+  show [label="前端展示结果", fillcolor="#DCECF2"];
+  bad [label="返回参数错误", fillcolor="#F7E2DF"];
+  fallback [label="说明暂无可靠依据\n避免无依据回答", fillcolor="#F7E2DF"];
+  error [label="记录异常并返回\n友好错误信息", fillcolor="#F7E2DF"];
+
+  q -> valid;
+  valid -> embed [label="是"];
+  valid -> bad [label="否"];
+  embed -> search -> found;
+  found -> context [label="是"];
+  found -> fallback [label="否"];
+  context -> prompt -> llm -> stream -> save -> show;
+  fallback -> save;
+  embed -> error [style=dashed, label="模型异常"];
+  search -> error [style=dashed, label="检索异常"];
+  llm -> error [style=dashed, label="生成异常"];
+}

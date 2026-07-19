@@ -1,0 +1,40 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.pytest_cache/
+.coverage
+backend/build/
+
+backend/.env
+backend/.venv/
+backend/.venv-*/
+backend/*.egg-info/
+backend/data/*.db*
+backend/data/*.index
+backend/data/*.faiss
+backend/data/*.pkl
+backend/data/llama_index_storage/
+backend/data/uploads/
+
+frontend/node_modules/
+frontend/dist/
+
+# 本地构建产物与备份
+output/
+tmp/
+.playwright-mcp/
+site-snapshot-full/
+*.png
+!docs/screenshots/*.png
+!docs/day2/*.png
+!frontend/public/hohai-emblem.png
+
+# Demo 向量库 release asset 与临时文件
+campus-qa-demo-index-*.tar.gz
+.tmp-demo-index.tar.gz
+
+# 全量知识库不上传，仅保留 knowledge-base/demo/ 用于演示
+knowledge-base/*/
+!knowledge-base/demo/
+!knowledge-base/README.md
+!knowledge-base/INDEX.md

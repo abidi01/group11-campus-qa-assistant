@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Widget 嵌入测试 - 河海大学问答助手</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        padding: 40px;
+        background: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Widget 嵌入测试页</h1>
+    <p>这是一个模拟学校官网的页面，右下角应该出现河海大学问答助手 Widget。</p>
+
+    <script src="./widget.js?v=4"></script>
+    <script>
+      window.HHUChat.init({
+        apiBaseUrl: 'http://localhost:8000/api',
+      })
+    </script>
+  </body>
+</html>

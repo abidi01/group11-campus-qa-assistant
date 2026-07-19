@@ -1,0 +1,29 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    env_file:
+      - ./backend/.env
+    environment:
+      DATABASE_PATH: /app/data/campus_qa.db
+      UPLOAD_DIR: /app/data/uploads
+      DATA_DIR: /app/data
+      KNOWLEDGE_BASE_DIR: /knowledge-base
+      FRONTEND_ORIGINS: http://localhost:8080
+    volumes:
+      - campus_data:/app/data
+      - ./knowledge-base:/knowledge-base:ro
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+volumes:
+  campus_data:

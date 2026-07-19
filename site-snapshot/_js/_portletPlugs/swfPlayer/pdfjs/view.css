@@ -1,0 +1,354 @@
+[hidefocus], summary {
+    outline: 0;
+}
+.wp_pdf_player pre, .wp_pdf_player code, .wp_pdf_player kbd, .wp_pdf_player samp {
+    font-family: inherit;
+}
+.wp_pdf_player q:before, .wp_pdf_player q:after {
+    content: none;
+}
+.wp_pdf_player a, .wp_pdf_player button {
+    cursor: pointer;
+}
+.wp_pdf_player .section {
+    background: #fff;
+}
+.wp_pdf_player .p-wrap {
+    height:100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+}
+.wp_pdf_player .p-list {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    position: relative;
+    /*background: url(../img/loading.gif) no-repeat center center;*/
+}
+.wp_pdf_player .barset {
+    text-align: center;
+}
+.wp_pdf_player .barset span {
+    font-size: 0.95rem;
+}
+.wp_pdf_player .m-cont {
+    /*height:100%;*/
+    position: fixed;
+    z-index:99;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background: #000;
+}
+.wp_pdf_player .m-look-pic {
+    float: right;
+}
+.wp_pdf_player .m-head {
+    position: absolute;
+    top:0;
+    left:0;
+    color: #fff;
+    height: 42px;
+    font-size: 16px;
+    z-index: 100;
+    text-align: center;
+}
+.wp_pdf_player .m-go-back {
+    position: absolute;
+    left:6px;
+    top:0;
+    width:40px;
+    height:42px;
+    line-height: 42px;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+}
+.wp_pdf_player .m-look-pic {
+    color: #fff;
+    float: right;
+    /*display: block;*/
+    height:22px;
+    line-height: 22px;
+    text-align: center;
+    margin:10px 12px 0 0;
+}
+.wp_pdf_player .m-box {
+    height:100%;
+    position: relative;
+}
+.wp_pdf_player .m-box ul {
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    overflow: hidden;
+}
+.wp_pdf_player .m-box ul li {
+    position: absolute;
+    height:100%;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    box-pack:center;
+    box-align:center;
+
+}
+.wp_pdf_player .m-box ul li img {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.wp_pdf_player .swiper-page {
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    z-index: 99;
+}
+.wp_pdf_player .swiper-bg {
+    background: #000;
+    opacity: 0.7;
+    height:20px;
+}
+
+.wp_pdf_player .m-info{
+    position: absolute;
+    height:30px;
+    font-size:14px;
+    line-height: 30px;
+    opacity: 0.8;
+    background: #000;
+    z-index:99;
+    bottom: 0;
+    left: 0;
+    padding:10px;
+    color: #fff;
+}
+.wp_pdf_player .m-info-index {
+    float: left;
+    margin-left:10px;
+}
+.wp_pdf_player a:hover {
+    color: #2e6da4;
+}
+.wp_pdf_player input{
+    border:1px solid #cccccc;
+    width:30px;
+    height: 18px;
+}
+.wp_pdf_player .p-head {
+    height:35px;
+    line-height: 30px;
+}
+.wp_pdf_player .p-cont {
+    border-top:0;
+}
+/* 切换样式 */
+
+.wp_pdf_player .p-prev,.p-next,.p-active,.p-pages,.p-page,.p-go,.p-next {
+    margin:0px 5px 0 5px;
+}
+/*.p-go {
+    margin: 9px 0 5px 5px;
+    padding: 2px 5px;
+    background: #ffac59;
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: Arial, 'Microsoft YaHei';
+    font-size: 14px;
+    text-decoration: none;
+}*/
+
+.wp_pdf_player .prev {
+    margin: 9px 0 5px 5px;
+    padding: 2px 5px;
+    background: #ffac59;
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: Arial, 'Microsoft YaHei';
+    font-size: 14px;
+    text-decoration: none
+}
+
+.wp_pdf_player .swiper-lazy-preloader {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -21px;
+    margin-top: -21px;
+    z-index: 10;
+    -webkit-transform-origin: 50%;
+    -moz-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+    -moz-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+    animation: swiper-preloader-spin 1s steps(12, end) infinite;
+}
+.wp_pdf_player .swiper-lazy-preloader:after {
+    /*display: block;*/
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-position: 50%;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+@-webkit-keyframes swiper-preloader-spin {
+    100% {
+    -webkit-transform: rotate(360deg);
+}
+}
+@keyframes swiper-preloader-spin {
+    100% {
+    transform: rotate(360deg);
+}
+}
+
+.wp_pdf_player .border-1px {
+    position: relative;
+}
+
+.wp_pdf_player .border-1px:after{
+    /*display: block;*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    content: ' ';
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5){
+    .border-1px::after{
+        -webkit-transform: scaleY(0.7);
+        transform: scaleY(0.7);
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2){
+    .border-1px::after{
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+
+}
+
+
+
+
+@media (max-width: 720px) {
+    .p-main {
+        width:70%;
+        margin: 0 auto;
+    }
+}
+
+
+/*.image {
+    display: none;
+}
+
+*/
+
+
+.wp_pdf_player .p-alert {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -25px;
+    z-index: 101;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+    width: 100px;
+    height: 50px;
+}
+
+.wp_pdf_player .iconfont {
+    font-size: 0.95rem;
+}
+
+.wp_pdf_player select {
+    width: 20%;
+    height: 30px;
+    border: 1px solid #ccc;
+    background: #FFF;
+    line-height: 24px;
+    color: #000;
+    font-size: 1.1em;
+    background: #fff;
+}
+
+.wp_pdf_player select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+
+    /*很关键：将默认的select选择框样式清除*/
+/*    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;*/
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url("images/123.png") no-repeat scroll right center transparent;
+
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 14px;
+    padding-left: 5px;
+    
+    
+}
+.wp_pdf_player select::-ms-expand { display: none; }
+
+.wp_pdf_player .p-screen {
+    cursor: pointer;
+    float: left;
+}
+
+.wp_pdf_player .p-litter{
+    cursor:pointer;
+    float:right;
+}
+
+@font-face {font-family: "iconfont";
+            src: url('iconfont.eot?t=1492570434104'); /* IE9*/
+            src: url('iconfont.eot?t=1492570434104#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                url('iconfont.woff?t=1492570434104') format('woff'), /* chrome, firefox */
+                url('iconfont.ttf?t=1492570434104') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+                url('iconfont.svg?t=1492570434104#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.wp_pdf_player .iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wp_pdf_player .icon-Left:before { content: "\e600"; }
+
+.wp_pdf_player .icon-right:before { content: "\e613"; }
+
+.wp_pdf_player .icon-you:before { content: "\e615"; }
+.wp_pdf_player{border:0px;}
+/*.wp_pdf_player .pictureswitch { border:1px solid #cccccc;margin-right:2px; }*/

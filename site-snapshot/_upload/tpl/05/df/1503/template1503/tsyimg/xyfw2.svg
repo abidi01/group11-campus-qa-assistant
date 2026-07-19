@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61.071" height="60.475" viewBox="0 0 61.071 60.475">
+  <g id="组_9066" data-name="组 9066" transform="translate(1.503 1.5)">
+    <path id="路径_62845" data-name="路径 62845" d="M-3232.721,2513.334l-4.168,2.893-10.684,7.415-10.241-7.415-3.995-2.893,14.236-10.307Z" transform="translate(3262.401 -2496.486)" fill="none" stroke="#004098" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="路径_62846" data-name="路径 62846" d="M-3236.888,2552.345l4.168,2.893-14.852,10.307-14.236-10.307,3.995-2.893" transform="translate(3262.401 -2532.369)" fill="none" stroke="#004098" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="路径_62847" data-name="路径 62847" d="M-3261.812,2489.322l14.238-10.307,14.851,10.307" transform="translate(3262.404 -2479.015)" fill="none" stroke="#004098" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <g id="组_9065" data-name="组 9065" transform="translate(0.593 0)">
+      <path id="路径_62848" data-name="路径 62848" d="M-3105.312,2497.39V2480.8a4.086,4.086,0,0,0-4.086-4.086h-17.13" transform="translate(3162.787 -2476.719)" fill="none" stroke="#004098" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="路径_62849" data-name="路径 62849" d="M-3259.636,2622.18v15.527a4.086,4.086,0,0,0,4.086,4.086h13.281" transform="translate(3259.636 -2584.317)" fill="none" stroke="#004098" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+    <g id="组_9079" data-name="组 9079" transform="translate(27.518 27.815)">
+      <path id="路径_62820" data-name="路径 62820" d="M5,19H30.482V33.082a1.341,1.341,0,0,1-1.341,1.341H6.341A1.341,1.341,0,0,1,5,33.082Z" transform="translate(0 -4.941)" fill="none" stroke="#004098" stroke-linejoin="round" stroke-width="3"/>
+      <path id="路径_62821" data-name="路径 62821" d="M5,8.341A1.341,1.341,0,0,1,6.341,7h22.8a1.341,1.341,0,0,1,1.341,1.341v6.706H5Z" transform="translate(0 -0.988)" fill="none" stroke="#004098" stroke-linejoin="round" stroke-width="3"/>
+      <path id="路径_62822" data-name="路径 62822" d="M16,4V9.365" transform="translate(-3.624)" fill="none" stroke="#004098" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="路径_62823" data-name="路径 62823" d="M32,4V9.365" transform="translate(-8.894)" fill="none" stroke="#004098" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="路径_62824" data-name="路径 62824" d="M28,34h4.024" transform="translate(-7.576 -9.882)" fill="none" stroke="#004098" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="路径_62825" data-name="路径 62825" d="M14,34h4.024" transform="translate(-2.965 -9.882)" fill="none" stroke="#004098" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="路径_62826" data-name="路径 62826" d="M28,26h4.024" transform="translate(-7.576 -7.247)" fill="none" stroke="#004098" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="路径_62827" data-name="路径 62827" d="M14,26h4.024" transform="translate(-2.965 -7.247)" fill="none" stroke="#004098" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

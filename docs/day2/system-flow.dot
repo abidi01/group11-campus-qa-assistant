@@ -1,0 +1,30 @@
+digraph CampusQA {
+  graph [rankdir=TB, bgcolor="#F6F3EC", pad=0.35, nodesep=0.38, ranksep=0.55, fontname="Microsoft YaHei", label="校园问答助手 - 系统整体流程", labelloc=t, fontsize=22, fontcolor="#12394D"];
+  node [shape=box, style="rounded,filled", fontname="Microsoft YaHei", fontsize=11, color="#9BB5C3", fillcolor="#FFFFFF", fontcolor="#173645", margin="0.16,0.10"];
+  edge [fontname="Microsoft YaHei", fontsize=9, color="#5D8498", fontcolor="#456A7D", arrowsize=0.75];
+
+  start [shape=oval, label="开始", fillcolor="#DCECF2"];
+  auth [label="注册 / 登录\n密码哈希 + JWT"];
+  check [shape=diamond, label="身份与角色\n校验", fillcolor="#FFF4D6"];
+  home [label="进入校园问答平台"];
+  question [label="发起校园问题"];
+  rag [label="RAG 检索与生成\n返回答案 + 引用来源", fillcolor="#E7F2EC"];
+  history [label="保存并展示\n个人问答历史"];
+  admin [label="管理员工作台"];
+  users [label="用户 CRUD\n新增 / 查询 / 编辑 / 软删除"];
+  upload [label="上传 TXT / MD / PDF / DOCX"];
+  process [label="解析 - 切分 - 向量化"];
+  index [label="写入 FAISS 向量索引", fillcolor="#E7F2EC"];
+  logout [label="退出登录\n清除本地 Token"];
+  end [shape=oval, label="结束", fillcolor="#DCECF2"];
+
+  start -> auth -> check;
+  check -> home [label="学生 / 管理员"];
+  check -> auth [label="未认证 / Token 失效"];
+  home -> question -> rag -> history -> home;
+  home -> logout -> end;
+  check -> admin [label="ADMIN"];
+  admin -> users -> admin;
+  admin -> upload -> process -> index -> admin;
+  index -> rag [style=dashed, label="提供检索数据"];
+}

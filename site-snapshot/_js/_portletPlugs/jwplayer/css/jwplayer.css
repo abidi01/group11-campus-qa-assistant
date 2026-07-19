@@ -1,0 +1,122 @@
+
+#wp_audio_player_show{
+    position: relative;
+    top: -36px;
+}
+.wp_audio_player_btn{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 3px;
+}
+#hd_select{
+    float: right;
+    margin-right: 5px;
+    border: none;
+    background: none;
+    color: #fff;
+}
+#btn_start{
+    display: none;
+}
+#slider .ui-slider-handle {
+    display: none;
+}
+#slider {
+    opacity: 0.5;
+    height: 0.5em;
+    cursor: pointer;
+}
+#slider .ui-slider-range {
+    background: #ff0000;
+}
+#btn_start{
+    width: 32px;
+    height: 20px;
+    float: left;
+    background: url("../start.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+#btn_pause{
+    width: 32px;
+    height: 20px;
+    float: left;
+    background: url("../timeOut.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+#btn_stop{
+    width: 32px;
+    height: 20px;
+    float: left;
+    background: url("../stop.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+#pause_btn_all{
+    left: 50%;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin-left: -32px;
+    background: url(../pause.png) no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+video {
+    background: #1f1f1f;
+}
+.slider_time_content{
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    color:#fff;
+    top: -2px;
+}
+#hd_select option {
+    color: #fff;
+	background: #000;
+}
+.wp_articlecontent {
+    position: relative;
+}
+
+div#slider1 {
+    position: absolute;
+    bottom: 62px;
+    left: 479px;
+	display:none;
+	width: 5px !important;
+}
+
+div#btn_qp {
+    position: absolute;
+    bottom: 38px;
+    left: 511px;
+    color: #fff;
+}
+
+.voice {
+    position: absolute;
+    bottom: 41px;
+    left: 475px;
+	width: 21px;
+    height: 18px;
+	background:url(../voice.png) no-repeat center;
+}
+.ui-slider-vertical .ui-slider-range-min {
+    background: #c1c1c1;
+}
+.ui-slider-vertical .ui-slider-handle {
+    left: -0.43em;
+    margin-left: 0;
+    margin-bottom: -.6em;
+}
+
+.ui-slider .ui-slider-handle {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: #a9a9a9 !important;
+	border: 1px #fff solid !important;
+}
